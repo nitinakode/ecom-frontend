@@ -9,6 +9,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import CartCard from './CartCard';
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
 
@@ -18,10 +19,7 @@ interface AnchorTemporaryDrawerProps {
 
 export default function AnchorTemporaryDrawer({ setDrawer }: AnchorTemporaryDrawerProps) {
   const [state, setState] = React.useState({
-    top: false,
-    left: false,
-    bottom: false,
-    right: true, // Initially, the drawer opens from the right
+     right: true, // Initially, the drawer opens from the right
   });
 
   const toggleDrawer =
@@ -44,52 +42,46 @@ export default function AnchorTemporaryDrawer({ setDrawer }: AnchorTemporaryDraw
 
   const list = (anchor: Anchor) => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)} // Close the drawer when clicking the list
-      onKeyDown={toggleDrawer(anchor, false)} // Close the drawer on key press
-    >
-      <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
+    sx={{
+      width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250,
+      backgroundColor: '#1E88E5', // Example: a shade of blue
+      color: 'yellow', // Text color
+      padding: 2, // Add padding for better spacing
+      overflow: 'hidden', // Prevent overflow if the content is too large
+      display: 'flex', // Optional: Use flexbox for better alignment
+      flexDirection: 'column', // Optional: Stack content vertically
+      alignItems: 'center', // Optional: Center content horizontally
+    }}
+    role="presentation"
+    onClick={toggleDrawer(anchor, false)} // Close the drawer when clicking the list
+    onKeyDown={toggleDrawer(anchor, false)} // Close the drawer on key press
+  >
+    
+    {/* <CartCard /> */}
+  </Box>
+  
+  
   );
 
   return (
-    <div>
-      {(['left', 'right', 'top', 'bottom'] as const).map((anchor) => (
-        <React.Fragment key={anchor}>
-          <Drawer
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
-          >
-            {list(anchor)}
-          </Drawer>
-        </React.Fragment>
-      ))}
-    </div>
-  );
+    <div style={{ width: '600%' }}>
+    {(['right'] as const).map((anchor) => (
+      <div style={{ width: '60px' }}>
+      <React.Fragment key={anchor}>
+        <Drawer
+          anchor={anchor}
+          // size={}
+          open={state[anchor]}
+          sx={{ width: '6%', // Adjust width as needed
+                flexShrink: 0 }} // Prevents shrinking
+          onClose={toggleDrawer(anchor, false)}
+        >
+          {list(anchor)}
+        </Drawer>
+      </React.Fragment>
+      </div>
+    ))}
+  </div>
+  
+  )  
 }

@@ -4,8 +4,16 @@ import SearchIcon from '@mui/icons-material/Search';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PersonIcon from '@mui/icons-material/Person';
 import AnchorTemporaryDrawer from './Drawer';
+import DrawerScrollable from './Drawer2';
+import Cart from './Components/Cart';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  cart: Cart; // Assuming Cart is a type you've defined elsewhere
+  setCart: React.Dispatch<React.SetStateAction<Cart>>;
+}
+
+const Header: React.FC<HeaderProps> = ({ cart, setCart }) => {
+
   const [location, setLocation] = useState<string | null>(null);
   const[drawer,setDrawer] =useState<boolean>(false);
   const [searchTerm, setSearchTerm] = useState<string>('');
@@ -93,14 +101,15 @@ const Header: React.FC = () => {
           </Typography>
 
           {drawer ? (
-            <AnchorTemporaryDrawer setDrawer={setDrawer} />
-) : (
-  <IconButton color="inherit" sx={{ marginLeft: 2 }} onClick={() => setDrawer(true)}>
-    <Avatar>
-      <PersonIcon />
-    </Avatar>
-  </IconButton>
-)}
+        <DrawerScrollable onClose={() => setDrawer(false)} cart={cart} setCart={setCart} />
+      ) : (
+        <IconButton color="inherit" sx={{ marginLeft: 2 }} onClick={() => setDrawer(true)}>
+          <Avatar>
+            <PersonIcon />
+          </Avatar>
+        </IconButton>
+      )}
+ 
 
         
         </Box>

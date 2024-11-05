@@ -1,0 +1,187 @@
+[
+
+      {
+        "id": 1,
+        "productName": "Wireless Mouse",
+        "price": 25.99,
+        "ordered": 1,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX09pmATU0PL7Naj0r0-3cVBwqYaCP_PB0kg&s",
+        "productDescription": "Ergonomic wireless mouse for daily use.",
+        "orderedCost": 25.99,
+        "productCategory": "Electronics"
+      },
+      {
+        "id": 2,
+        "productName": "Bluetooth Headphones",
+        "price": 59.99,
+        "ordered": 1,
+        "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_81f22c08-1c22-4524-be1a-01ade62f42f3?wid=488&hei=488&fmt=pjpeg",
+        "productDescription": "Noise-cancelling Bluetooth headphones.",
+        "orderedCost": 59.99,
+        "productCategory": "Electronics"
+      },
+      {
+        "id": 3,
+        "productName": "Smartwatch",
+        "price": 119.99,
+        "ordered": 1,
+        "imageUrl": "https://m.media-amazon.com/images/I/71eeuwo3RwL.jpg",
+        "productDescription": "Fitness tracking smartwatch with heart rate monitor.",
+        "orderedCost": 119.99,
+        "productCategory": "Electronics"
+      },
+      {
+        "id": 4,
+        "productName": "LED Desk Lamp",
+        "price": 15.99,
+        "ordered": 1,
+        "imageUrl": "https://content.etilize.com/images/450/1070786194.jpg",
+        "productDescription": "Energy-efficient LED desk lamp with adjustable brightness.",
+        "orderedCost": 15.99,
+        "productCategory": "Electronics"
+      },
+      {
+        "id": 5,
+        "productName": "Portable Charger",
+        "price": 29.99,
+        "ordered": 1,
+        "imageUrl": "https://m.media-amazon.com/images/I/518LRsfvXRL._AC_UF894,1000_QL80_.jpg",
+        "productDescription": "Portable power bank to charge your devices on-the-go.",
+        "orderedCost": 29.99,
+        "productCategory": "Electronics"
+      },
+      {
+        "id": 6,
+        "productName": "Electric Toothbrush",
+        "price": 39.99,
+        "ordered": 1,
+        "imageUrl": "https://m.media-amazon.com/images/I/71b3GG4F+iL._AC_UF1000,1000_QL80_.jpg",
+        "productDescription": "Electric toothbrush with smart timer.",
+        "orderedCost": 39.99,
+        "productCategory": "Electronics"
+      }
+,
+      {
+        "id": 7,
+        "productName": "Office Chair",
+        "price": 89.99,
+        "ordered": 1,
+        "imageUrl": "https://images.unsplash.com/photo-1583392223777-e0197d6c2b1b?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDZ8fG9mZmljZSUyMGNoYWlyfGVufDB8fHx8fDE2ODc3MjEyNzY&ixlib=rb-1.2.1&q=80&w=400",
+        "productDescription": "Comfortable office chair with lumbar support.",
+        "orderedCost": 89.99,
+        "productCategory": "Furniture"
+      },
+      {
+        "id": 8,
+        "productName": "Sofa Set",
+        "price": 399.99,
+        "ordered": 1,
+        "imageUrl": "https://images.unsplash.com/photo-1556742031-14b1e5011d4e?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHNvZmF8ZW58MHx8fHwxNjg3NzE1NzYw&ixlib=rb-1.2.1&q=80&w=400",
+        "productDescription": "Modern sofa set for the living room.",
+        "orderedCost": 399.99,
+        "productCategory": "Furniture"
+      },
+      {
+        "id": 9,
+        "productName": "Dining Table",
+        "price": 249.99,
+        "ordered": 1,
+        "imageUrl": "https://images.unsplash.com/photo-1561948951-44fd748fd4db?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDgxfHxlZGdlJTIwdGFibGV8ZW58MHx8fHwxNjg3NzE2OTc5&ixlib=rb-1.2.1&q=80&w=400",
+        "productDescription": "Wooden dining table with seating for six.",
+        "orderedCost": 249.99,
+        "productCategory": "Furniture"
+      },
+      {
+        "id": 10,
+        "productName": "Coffee Table",
+        "price": 129.99,
+        "ordered": 1,
+        "imageUrl": "https://images.unsplash.com/photo-1601758123927-833a5b1b63a7?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDhzfHxlZGdlJTIwdGFibGV8ZW58MHx8fHwxNjg3NzI0ODg3&ixlib=rb-1.2.1&q=80&w=400",
+        "productDescription": "Stylish coffee table with a modern design.",
+        "orderedCost": 129.99,
+        "productCategory": "Furniture"
+      },
+      {
+        "id": 11,
+        "productName": "Bookshelf",
+        "price": 89.99,
+        "ordered": 1,
+        "imageUrl": "https://images.unsplash.com/photo-1580190532297-63b71b3c2fbc?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDN8fGJvb2tzaGVsZnxlbnwwfHx8fDE2ODc3MjM4MTY&ixlib=rb-1.2.1&q=80&w=400",
+        "productDescription": "Wooden bookshelf with adjustable shelves.",
+        "orderedCost": 89.99,
+        "productCategory": "Furniture"
+      },
+      {
+        "id": 12,
+        "productName": "Wardrobe",
+        "price": 159.99,
+        "ordered": 1,
+        "imageUrl": "https://images.unsplash.com/photo-1592510314964-1db51c1499bc?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdhd2Fyb2JlfGVufDB8fHx8fDE2ODc3MjMzMzY&ixlib=rb-1.2.1&q=80&w=400",
+        "productDescription": "Large wardrobe with sliding doors.",
+        "orderedCost": 159.99,
+        "productCategory": "Furniture"
+      },
+
+      {
+        "id": 13,
+        "productName": "Air Purifier",
+        "price": 199.99,
+        "ordered": 1,
+        "imageUrl": "https://images.unsplash.com/photo-1571057360103-598fb9b27a92?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGFpciUyMHB1cmlmaWVyfGVufDB8fHx8fDE2ODc3MjQ2MzI&ixlib=rb-1.2.1&q=80&w=400",
+        "productDescription": "Advanced air purifier for healthier air.",
+        "orderedCost": 199.99,
+        "productCategory": "Home Appliances"
+      },
+      {
+        "id": 14,
+        "productName": "Electric Kettle",
+        "price": 29.99,
+        "ordered": 1,
+        "imageUrl": "https://images.unsplash.com/photo-1571057360103-598fb9b27a92?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDlfMHx8ZWxlY3RyaWMlMjBrZXR0bGV8ZW58MHx8fHwxNjg3NzIxNzQ1&ixlib=rb-1.2.1&q=80&w=400",
+        "productDescription": "Fast boiling electric kettle with auto shut-off.",
+        "orderedCost": 29.99,
+        "productCategory": "Home Appliances"
+      },
+      {
+        "id": 15,
+        "productName": "Coffee Maker",
+        "price": 49.99,
+        "ordered": 1,
+        "imageUrl": "https://images.unsplash.com/photo-1601758185207-315ff0c62d49?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGNvZmZlZSUyMG1ha2VyfGVufDB8fHx8fDE2ODc3MjUyMjk&ixlib=rb-1.2.1&q=80&w=400",
+        "productDescription": "Compact coffee maker with brew-strength control.",
+        "orderedCost": 49.99,
+        "productCategory": "Home Appliances"
+      },
+      {
+        "id": 16,
+        "productName": "Blender",
+        "price": 39.99,
+        "ordered": 1,
+        "imageUrl": "https://images.unsplash.com/photo-1601758163927-b498aad1b0c6?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGtpdGNoZW4lMjBibGVuZGVyfGVufDB8fHx8fDE2ODc3MjUzMTI&ixlib=rb-1.2.1&q=80&w=400",
+        "productDescription": "Powerful blender for smoothies and shakes.",
+        "orderedCost": 39.99,
+        "productCategory": "Home Appliances"
+      },
+      {
+        "id": 17,
+        "productName": "Vacuum Cleaner",
+        "price": 99.99,
+        "ordered": 1,
+        "imageUrl": "https://images.unsplash.com/photo-1571057360259-6b1f9b58b9c6?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDlfMHx8dmFjdWumlMjBjbGVhbmVyfGVufDB8fHx8fDE2ODc3MjUzMzg&ixlib=rb-1.2.1&q=80&w=400",
+        "productDescription": "High-performance vacuum cleaner with multi-surface capability.",
+        "orderedCost": 99.99,
+        "productCategory": "Home Appliances"
+      },
+      {
+        "id": 18,
+        "productName": "Smart Thermostat",
+        "price": 129.99,
+        "ordered": 1,
+        "imageUrl": "https://images.unsplash.com/photo-1617206507551-f1d8f338b2d1?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDgxfHxtYXJrZXR0bGV8ZW58MHx8fHwxNjg3NzI1NjY3&ixlib=rb-1.2.1&q=80&w=400",
+        "productDescription": "Smart thermostat for energy-efficient home climate control.",
+        "orderedCost": 129.99,
+        "productCategory": "Home Appliances"
+      }
+    
+    ]
+  

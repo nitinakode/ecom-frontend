@@ -1,72 +1,19 @@
 import React from "react";// Assuming this is the file path for your existing component
 import { Box } from "@mui/material";
 import ActionAreaCard from "./Card";
+import Product from "./Components/Product";
+import image from './image.png';
+import Cart from "./Components/Cart";
+import productArray from './Products.json'
 
-// JSON list of products
-const productList = [
-  {
-    product_name: "Product 1",
-    price: 19.99,
-    product_category: "Category A"
-  },
-  {
-    product_name: "Product 2",
-    price: 29.99,
-    product_category: "Category B"
-  },
-  {
-    product_name: "Product 3",
-    price: 39.99,
-    product_category: "Category C"
-  },
-  {
-    product_name: "Product 1",
-    price: 19.99,
-    product_category: "Category A"
-  },
-  {
-    product_name: "Product 2",
-    price: 29.99,
-    product_category: "Category B"
-  },
-  {
-    product_name: "Product 3",
-    price: 39.99,
-    product_category: "Category C"
-  },
-  {
-    product_name: "Product 1",
-    price: 19.99,
-    product_category: "Category A"
-  },
-  {
-    product_name: "Product 2",
-    price: 29.99,
-    product_category: "Category B"
-  },
-  {
-    product_name: "Product 3",
-    price: 39.99,
-    product_category: "Category C"
-  },
-  {
-    product_name: "Product 1",
-    price: 19.99,
-    product_category: "Category A"
-  },
-  {
-    product_name: "Product 2",
-    price: 29.99,
-    product_category: "Category B"
-  },
-  {
-    product_name: "Product 3",
-    price: 39.99,
-    product_category: "Category C"
-  }
-];
+interface PrductListProps {
+  cart: Cart; // Assuming Cart is a type you've defined elsewhere
+  setCart: React.Dispatch<React.SetStateAction<Cart>>;
+}
 
-export default function ProductList() {
+
+
+const ProductList:React.FC<PrductListProps> = ({ cart, setCart }) =>{
   return (
     <Box display="flex"
     flexDirection="column"
@@ -75,24 +22,28 @@ export default function ProductList() {
     <Box
       display="flex"
       flexDirection="row"
-      justifyContent="space-between"
+   
       sx={{ overflowX: "auto", padding: 2 }}
     >
-      {productList.map((product, index) => (
+      {productArray.map((product, index) => (
         <Box key={index} sx={{ flexShrink: 0, width: 345, marginRight: 2 }}>
           <ActionAreaCard
-            product_name={product.product_name}
-            price={product.price}
-            product_category={product.product_category}
-          />
+          key={product.productName}
+          productName={product.productName}
+          price={product.price}
+          productDescription={product.productDescription}
+          imageUrl={product.imageUrl}
+          cart={cart} // Pass cart and setCart props here
+          setCart={setCart}
+        />
         </Box>
       ))}
     </Box>
-  <Box height={200}/>
+  <Box height={1}/>
     <Box
       display="flex"
       flexDirection="row"
-      justifyContent="space-between"
+ 
       
       sx={{
         overflowX: "auto",
@@ -104,16 +55,21 @@ export default function ProductList() {
           display: "none", // Chrome, Safari, and Edge
         }}}
     >
-      {productList.map((product, index) => (
+      {productArray.map((product, index) => (
         <Box key={index} sx={{ flexShrink: 0, width: 345, marginRight: 2 }}>
           <ActionAreaCard
-            product_name={product.product_name}
-            price={product.price}
-            product_category={product.product_category}
-          />
+          key={product.productName}
+          productName={product.productName}
+          price={product.price}
+          productDescription={product.productDescription}
+          imageUrl={product.imageUrl}
+          cart={cart} // Pass cart and setCart props here
+          setCart={setCart}
+        />
         </Box>
       ))}
     </Box>
     </Box>
   );
 }
+export default ProductList;
